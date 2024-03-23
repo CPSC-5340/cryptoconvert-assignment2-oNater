@@ -22,7 +22,6 @@ struct CurrencyExchangeView: View {
     var body: some View {
         List(conversions, id: \.0) { currency, conversion, flagName in
             Button(action: {
-                // Toggle selection
                 if selectedCurrency == currency {
                     selectedCurrency = nil
                 } else {

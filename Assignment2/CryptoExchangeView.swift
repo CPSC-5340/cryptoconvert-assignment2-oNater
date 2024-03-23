@@ -13,7 +13,7 @@ struct CryptoExchangeView: View {
         VStack {
             TextField("Enter number of Bitcoins", text: $viewModel.bitcoinAmount)
                 .padding()
-                .keyboardType(.decimalPad)
+                .keyboardType(.numberPad)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
 
             List(viewModel.convertedValues, id: \.0) { currency, value in
